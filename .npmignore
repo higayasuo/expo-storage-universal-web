@@ -24,3 +24,6 @@ coverage/
 # Test files
 *.test.ts
 *.spec.ts
+
+# npm pack
+*.tgz
