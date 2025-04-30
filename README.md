@@ -10,13 +10,19 @@ Web implementation of [expo-storage-universal](https://github.com/higayasuo/expo
 ## Installation
 
 ```bash
-npm install expo-storage-universal-web
+# Install both packages
+npm install expo-storage-universal expo-storage-universal-web
 ```
+
+Note: `expo-storage-universal` is a peer dependency of this package.
 
 ## Usage
 
 ```typescript
-import { WebRegularStorage, WebSecureStorage } from 'expo-storage-universal-web';
+import {
+  WebRegularStorage,
+  WebSecureStorage,
+} from 'expo-storage-universal-web';
 
 // For regular storage
 const regularStorage = new WebRegularStorage();
