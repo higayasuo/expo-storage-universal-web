@@ -2,8 +2,8 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { WebRegularStorage } from '../WebRegularStorage';
 
 beforeEach(() => {
-  // Clear sessionStorage before each test
-  sessionStorage.clear();
+  // Clear localStorage before each test
+  localStorage.clear();
 });
 
 describe('WebRegularStorage', () => {
@@ -25,7 +25,7 @@ describe('WebRegularStorage', () => {
 
       await storage.save('testKey', testValue);
 
-      const result = sessionStorage.getItem('regular_testKey');
+      const result = localStorage.getItem('regular_testKey');
       expect(result).toEqual(testValue);
     });
 
